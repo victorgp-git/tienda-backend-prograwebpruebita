@@ -3,8 +3,8 @@ import cors from "cors";
 import dotenv from "dotenv";
 import { sequelize } from "./database.js";
 
-import cartRoutes from "./routes/cart.routes.js";
-import orderRoutes from "./routes/order.routes.js";
+import cartRoutes from "./src/routes/cart.routes.js";
+import orderRoutes from "./src/routes/order.routes.js";
 
 dotenv.config();
 const app = express();
