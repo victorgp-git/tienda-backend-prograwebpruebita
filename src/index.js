@@ -12,6 +12,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// Endpoint simple para probar Azure
+app.get("/", (req, res) => {
+  res.send("Servidor funcionando correctamente");
+});
+
 app.use("/api/cart", cartRoutes);
 app.use("/api/orders", orderRoutes);
 
@@ -32,3 +37,4 @@ async function start() {
 }
 
 start();
+
