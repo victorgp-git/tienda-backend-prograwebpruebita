@@ -62,4 +62,3 @@ jobs:
           app-name: 'test1serverapig7'
           slot-name: 'Production'
           package: .
-          
